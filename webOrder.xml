@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Page Object test example">
+	<parameter name="appURL"
+		value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx?11%2fWebOrders%2fDefault.aspx" />
+	<parameter name="browserType" value="chrome" />
+	<test name="test-1">
+		<classes>
+		<class name="com.webOrder.test.WebOrder_EditOrder" />
+			<class name="com.webOrder.test.WebOrder_List_of_Orders" />
+			<class name="com.webOrder.test.ListOfProducts" />
+			<class name="com.webOrder.test.Weborder_create" />
+		</classes>
+	</test>	
+</suite>
+

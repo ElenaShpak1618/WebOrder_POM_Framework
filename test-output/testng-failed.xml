@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object test example]" guice-stage="DEVELOPMENT">
+  <parameter name="appURL" value="http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx?11%2fWebOrders%2fDefault.aspx"/>
+  <parameter name="browserType" value="chrome"/>
+  <test thread-count="5" name="test-1(failed)">
+    <classes>
+      <class name="com.webOrder.test.Weborder_create">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="createOrder" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.webOrder.test.Weborder_create -->
+      <class name="com.webOrder.test.ListOfProducts">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyAllProduct"/>
+        </methods>
+      </class> <!-- com.webOrder.test.ListOfProducts -->
+    </classes>
+  </test> <!-- test-1(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->
